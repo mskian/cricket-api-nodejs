@@ -43,8 +43,8 @@ app.get('/', function(req, res) {
         var bowlerruns = $('td[class="cbz-grid-table-fix "]').eq(23).text();
         var bowlerwickets = $('td[class="cbz-grid-table-fix "]').eq(24).text();
         var partnership = $("span[style='color:#333']").eq(0).text();
-        var recentballs = $("span[style='color:#333']").eq(1).text();
-        var lastwicket = $("span[style='color:#333']").eq(2).text();
+        var recentballs = $("span[style='color:#333']").eq(2).text();
+        var lastwicket = $("span[style='color:#333']").eq(1).text();
         var runrate = $("span[class='crr']").eq(0).text();
         var commentary = $("p[class='commtext']").text();
 
@@ -123,8 +123,8 @@ app.get('/score', function(req, res) {
         var bowlerruns = $('td[class="cbz-grid-table-fix "]').eq(23).text();
         var bowlerwickets = $('td[class="cbz-grid-table-fix "]').eq(24).text();
         var partnership = $("span[style='color:#333']").eq(0).text();
-        var recentballs = $("span[style='color:#333']").eq(1).text();
-        var lastwicket = $("span[style='color:#333']").eq(2).text();
+        var recentballs = $("span[style='color:#333']").eq(2).text();
+        var lastwicket = $("span[style='color:#333']").eq(1).text();
         var runrate = $("span[class='crr']").eq(0).text();
         var commentary = $("p[class='commtext']").text();
 
