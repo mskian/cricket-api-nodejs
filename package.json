@@ -1,0 +1,39 @@
+{
+  "name": "cricket-api-nodejs",
+  "version": "0.0.1",
+  "description": "Live Cricket Score JSON API - Get data from Cricbuzz.",
+  "private": true,
+  "main": "index.js",
+  "scripts": {
+    "test": "node test.js",
+    "start": "node index.js",
+    "dev": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mskian/cricket-api-nodejs.git"
+  },
+  "keywords": [
+    "cricet",
+    "cricket",
+    "api",
+    "api",
+    "json",
+    "express"
+  ],
+  "author": "Santhosh Veer",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mskian/cricket-api-nodejs/issues"
+  },
+  "homepage": "https://github.com/mskian/cricket-api-nodejs#readme",
+  "dependencies": {
+    "axios": "^0.21.1",
+    "cheerio": "^1.0.0-rc.10",
+    "express": "^4.17.1",
+    "random-useragent": "^0.5.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.10"
+  }
+}
