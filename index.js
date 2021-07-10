@@ -17,9 +17,12 @@ app.get('/', function(req, res) {
     res.setHeader('Content-Type', 'application/json');
     app.disable('x-powered-by');
 
+    let str = matchdata.match_url;
+    let live_url = str.replace('www', 'm');
+
     axios({
         method: 'GET',
-        url: matchdata.match_url,
+        url: live_url,
         headers: {
             'User-Agent': rua
         }
@@ -94,9 +97,12 @@ app.get('/score', function(req, res) {
 
     const match_url = req.query.url;
 
+    let str = match_url;
+    let live_url = str.replace('www', 'm');
+
     axios({
         method: 'GET',
-        url: match_url,
+        url: live_url,
         headers: {
             'User-Agent': rua
         }
