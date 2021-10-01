@@ -28,7 +28,7 @@
   },
   "homepage": "https://github.com/mskian/cricket-api-nodejs#readme",
   "dependencies": {
-    "axios": "^0.21.4",
+    "axios": "^0.22.0",
     "cheerio": "^1.0.0-rc.10",
     "express": "^4.17.1",
     "random-useragent": "^0.5.0"
