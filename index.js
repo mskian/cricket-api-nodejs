@@ -117,7 +117,11 @@ app.get('/live', function(req, res) {
     }).catch(function(error) {
         if (!error.response) {
             console.log('API URL is Missing');
-            res.json('API URL is Missing');
+            var livescore = ({
+                success: "false",
+                message: "API URL is Missing",
+            });
+            res.json(livescore);
         } else {
             console.log('Something Went Wrong - Enter the Correct API URL');
             res.json('Something Went Wrong - Enter the Correct API URL');
@@ -139,7 +143,7 @@ app.get('/score', function(req, res) {
 
     const match_url = req.query.url;
 
-    let str = match_url;
+    let str = match_url || '';
     let live_url = str.replace('www', 'm');
 
     axios({
@@ -223,7 +227,11 @@ app.get('/score', function(req, res) {
     }).catch(function(error) {
         if (!error.response) {
             console.log('API URL is Missing');
-            res.json('API URL is Missing');
+            var livescore = ({
+                success: "false",
+                message: "API URL is Missing",
+            });
+            res.json(livescore);
         } else {
             console.log('Something Went Wrong - Enter the Correct API URL');
             res.json('Something Went Wrong - Enter the Correct API URL');

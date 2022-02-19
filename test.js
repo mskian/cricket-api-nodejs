@@ -87,7 +87,11 @@ let live_url = str.replace('www', 'm');
     }).catch(function(error) {
         if (!error.response) {
             console.log('API URL is Missing');
-            res.json('API URL is Missing');
+            var livescore = ({
+                success: "false",
+                message: "API URL is Missing",
+            });
+            res.json(livescore);
         } else {
             console.log('Something Went Wrong - Enter the Correct API URL');
             res.json('Something Went Wrong - Enter the Correct API URL');

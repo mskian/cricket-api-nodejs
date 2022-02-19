@@ -1,6 +1,6 @@
 # Free Cricket API 🏏  
 
-[![dependencies Status](https://david-dm.org/mskian/cricket-api-nodejs/status.svg)](https://david-dm.org/mskian/cricket-api-nodejs) [![Github Workflow](https://github.com/mskian/cricket-api-nodejs/workflows/server-test/badge.svg)](https://github.com/mskian/cricket-api-nodejs/actions)  
+[![Github Workflow](https://github.com/mskian/cricket-api-nodejs/workflows/server-test/badge.svg)](https://github.com/mskian/cricket-api-nodejs/actions)  
 
 Node.js Version - Get Live Cricket Score data from `Cricbuzz.com`  
 
