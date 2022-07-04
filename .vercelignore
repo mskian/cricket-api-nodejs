@@ -8,4 +8,5 @@ README.md
 .github
 .gitignore
 test.js
+backups
 renovate.json

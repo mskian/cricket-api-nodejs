@@ -17,9 +17,13 @@ Everything is scraped live and shown to end users in realtime.
 - Live Match Data - `http://localhost:3000/live`
 - Get Live data from the URL - `http://localhost:3000/score?url=<Live Match URL>`  
 
+**Note**
+
+API Caching, CORS and API Rate limit Was Enabled by default you can update the settings accoding to your usage - Files are Located in `/routes/` folder  
+
 ## Requirements 📑
 
-- Server With Latest LTS Node.JS Support and Nginx
+- Server With Latest LTS Node.JS Support and Nginx (For Self Host)
 - HTTPS for Secure SSL Connection
 
 (OR)
@@ -66,7 +70,7 @@ http://localhost:3000/score?url=https://www.cricbuzz.com/live-cricket-scores/305
 
 (OR)
 
-- Update the Match URL on `app.json` File
+- Update the Match URL on `/utlis/app.json` File
 
 ```sh
 http://localhost:3000/live
