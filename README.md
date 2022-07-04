@@ -14,8 +14,8 @@ Everything is scraped live and shown to end users in realtime.
 
 **API URL**
 
-- Live Match Data - `https://criapi.vercel.app/live`
-- Get Live data from the URL - `https://criapi.vercel.app/score?url=<Live Match URL>`  
+- Live Match Data - `http://localhost:3000/live`
+- Get Live data from the URL - `http://localhost:3000/score?url=<Live Match URL>`  
 
 ## Requirements 📑
 
