@@ -9,6 +9,7 @@ const rua = randomUseragent.getRandom();
 const cache = apicache.middleware
 const matchdata = require('../utlis/app.json');
 const { dummydata } = require('../utlis/error.js');
+const { errormsg } = require('../utlis/msg.js');
 
 const apiRequestLimiter = rateLimit({
     windowMs: 1 * 60 * 1000,
@@ -112,15 +113,9 @@ router.get('/', cache('2 minutes'), apiRequestLimiter, function(req, res) {
 
     }).catch(function(error) {
         if (!error.response) {
-            console.log('API URL is Missing');
-            var livescore = ({
-                success: "false",
-                message: "API URL is Missing",
-            });
-            res.json(livescore);
+            res.json(errormsg());
         } else {
-            console.log('Something Went Wrong - Enter the Correct API URL');
-            res.json('Something Went Wrong - Enter the Correct API URL');
+            res.json(errormsg());
         }
     });
 
