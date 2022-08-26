@@ -5,8 +5,7 @@ const port = process.env.PORT || 3000;
 
 var allowedOrigins = ['http://localhost:8080',
     'https://score.sanweb.info',
-    'https://sanweb.info/',
-    'https://livescore.surge.sh'
+    'https://sanweb.info/'
 ];
 
 app.use(cors({
