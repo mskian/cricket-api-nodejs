@@ -1,6 +1,6 @@
 const cheerio = require('cheerio');
 const randomUseragent = require('random-useragent');
-const axios = require('axios');
+const axios = require('axios').default;
 const rua = randomUseragent.getRandom();
 const matchdata = require('./utlis/app.json');
 
