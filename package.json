@@ -29,7 +29,7 @@
   "homepage": "https://github.com/mskian/cricket-api-nodejs#readme",
   "dependencies": {
     "apicache": "^1.6.3",
-    "axios": "^1.2.0",
+    "axios": "^1.2.1",
     "cheerio": "^1.0.0-rc.12",
     "cors": "^2.8.5",
     "express": "^4.18.2",
